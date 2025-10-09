@@ -1,0 +1,43 @@
+site_name: FRAM
+
+theme:
+  features:
+    - navigation.sections
+    - content.code.copy
+  name: "material"
+  icon:
+    repo: fontawesome/brands/github
+
+
+markdown_extensions:
+- attr_list
+
+plugins:
+  - mike
+  - search
+  - macros
+
+nav:
+  - index.md
+  - Getting Started: 
+    - installation.md
+    - Simple demo: https://nve.github.io/fram-demo/
+  - Explanation:
+    - how_fram_works.md
+    - why_we_developed.md
+    - why_is_it_called.md
+  - How-to Guides:
+    - how_to_add_model.md
+    - how_to_contact.md
+
+extra:
+  version:
+    provider: mike
+  juleslinks:
+      jules: https://github.com/NVE/JulES/
+  framlinks:
+    core: https://nve.github.io/fram-core/
+    data: https://nve.github.io/fram-data/
+    demo: https://nve.github.io/fram-demo/
+    julesAPI: https://nve.github.io/fram-jules/
+    dataset: https://zenodo.org/records/17294467
