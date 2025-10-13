@@ -1,5 +1,9 @@
 # What is FRAM?
 
+<div class="red-box">
+The version of FRAM that is currently published is a beta version.  
+</div>
+
 FRAM is an open-source modelling framework developed by [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different power market models and compare them against each other. It gets data from a common model-neutral database and efficiently performs all necessary data transformations and operations needed to build a model, solve it, and get the results.
 
 ![Architecture overwiew](img/architecture_overview.png)
@@ -21,7 +25,7 @@ FRAM consists of several Python packages.
 
 ![Architecture of FRAM](img/package_overview.svg)
 
-We suggest installing [FRAM demo]({{ framlinks.demo }}){:target="_blank"} to explore FRAM. It will install all other packages automatically for you.
+We suggest installing or downloading [FRAM demo]({{ framlinks.demo }}){:target="_blank"} to explore FRAM. It will install all other packages automatically for you.
 
 You will find documentation of each package following these links:
 

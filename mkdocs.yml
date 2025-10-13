@@ -20,8 +20,7 @@ plugins:
 nav:
   - index.md
   - Getting Started: 
-    - installation.md
-    - Simple demo: https://nve.github.io/fram-demo/
+    - installation_and_demo.md
   - Explanation:
     - how_fram_works.md
     - why_we_developed.md
@@ -34,10 +33,14 @@ extra:
   version:
     provider: mike
   juleslinks:
-      jules: https://github.com/NVE/JulES/
+      jules:  https://github.com/NVE/JulES/
   framlinks:
-    core: https://nve.github.io/fram-core/
-    data: https://nve.github.io/fram-data/
-    demo: https://nve.github.io/fram-demo/
+    demo:     https://github.com/NVE/fram-demo
+    core:     https://nve.github.io/fram-core/
+    data:     https://nve.github.io/fram-data/
     julesAPI: https://nve.github.io/fram-jules/
     dataset: https://zenodo.org/records/17294467
+
+
+extra_css:
+  - assets/styles.css
