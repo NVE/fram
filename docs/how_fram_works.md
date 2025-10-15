@@ -1,5 +1,7 @@
 # How FRAM works
 
+*We are still working on this description; more information will come soon*
+
 The main component of FRAM is the **core model** that creates a python object **Model()** that holds the data from the database. Data in the model object is transformed depending on what is required by the given power market model. Data is imported from the database using **populator** class in FRAM data package.
 
 _Architecture of FRAM_
