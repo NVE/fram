@@ -21,7 +21,7 @@ Contact: [fram@nve.no](mailto:fram@nve.no)
 
 ## FRAM Packages
 
-FRAM consists of several Python packages. 
+FRAM consists of several Python packages:
 
 ![Architecture of FRAM](img/package_overview.svg)
 
@@ -32,4 +32,3 @@ You will find documentation of each package following these links:
 - [FRAM core]({{ framlinks.core }}){:target="_blank"}
 - [FRAM data]({{ framlinks.data }}){:target="_blank"}
 - [FRAM JulES]({{ framlinks.julesAPI }}){:target="_blank"}
-- [FRAM dataset]({{ framlinks.dataset }}){:target="_blank"}
