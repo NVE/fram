@@ -12,7 +12,7 @@ The model object contains high-level **components** (python objects) that hold t
 
 Different kinds of **nodes** can be defined - emission nodes, power nodes, fuel nodes etc. In this way the system supports modelling not only power market but also other adjacent markets - heat market, emission market, gas market etc.
 
-Data in the core model can be easily **manipulated** - aggregated, disaggregated, converted with respect to different units etc. This is how data can be staged for a given power marked model.
+Data in the core model can be easily **manipulated** - aggregated, disaggregated, converted with respect to different units and time resolution, etc. This is how data can be staged for a given energy marked model run.
 
 For more details about the core model, see [FRAM core]({{ framlinks.core }}){:target="_blank"}.
 
