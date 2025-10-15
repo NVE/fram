@@ -2,7 +2,7 @@
 
 We recommend that you set up our simple demo to get started with FRAM. Go to the [demo page on GitHub]({{ framlinks.demo }}){:target="_blank"} and follow the installation steps. 
 
-Demo installation will install all necessary dependenies for FRAM and all FRAM packages. It will also install an open-source power market model JulES and a demo dataset so that you can run a simple modelling case and see how FRAM works. 
+Demo installation will install all the necessary dependenies for FRAM and all FRAM packages. It will also install an open-source power market model JulES and a demo dataset so that you can run a simple modelling case and see how FRAM works. 
 
 ## Separate installation of FRAM packages and demo dataset
 
