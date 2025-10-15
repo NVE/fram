@@ -1,9 +1,4 @@
-# Description
-This is the main documentation page for FRAM framework for running energy market models. See [FRAM mainpage](https://nve.github.io/fram/) for installation instructions and how to get started with FRAM.
+# About
+This repository only contains mkdocs files for FRAM documentation pages.
 
-FRAM consists of several packages:
-* https://github.com/NVE/fram-demo
-* https://github.com/NVE/fram-core
-* https://github.com/NVE/fram-data
-* https://github.com/NVE/fram-jules
-
+Go to [FRAM mainpage](https://nve.github.io/fram/) for links to all packages and installation instructions.
