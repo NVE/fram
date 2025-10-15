@@ -1,0 +1,34 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  
+
+permissions:
+  contents: write  # Needed to push to gh-pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'  
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs>=1.6.1     
+          pip install mkdocs-material>=9.6.18
+          pip install mkdocs-macros-plugin>=1.3.9
+          pip install mkdocs-table-reader-plugin>=3.1.0
+          pip install mike>=2.1.3
+
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
+        
