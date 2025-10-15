@@ -9,4 +9,4 @@ Transparency has been a key priority. FRAM is completely open-source, and we at 
 FRAM has been developed by a team of professional Python developers in collaboration with NVE’s analysts, combining domain expertise in energy system analysis and modelling with professional software development skills. This collaboration between analysts and developers has ensured a robust framework that balances technical performance with practical usability — tailored to the needs of both users and contributors. 
 
 ![NVE_powerplant](img/nve.jpg)
-_One of NVE's areas of responsibility is understanding the power market. Here showing Såheim hydropower plant in Telemark, Norway._
+_One of NVE's key areas of responsibility is understanding the power market. Here showing Såheim hydropower plant in Telemark, Norway._
