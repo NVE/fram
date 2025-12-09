@@ -1,10 +1,14 @@
 # What is FRAM?
 
 <div class="red-box">
-The version of FRAM that is currently published is a beta version.  
+The version of FRAM that is currently published is an Minimum Viable Product, i.e. it has minimum functionality to run a simple power market model. We are working on adding more features.  
 </div>
 
-FRAM is an open-source modelling framework developed by [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different power market models and compare them against each other. It gets data from a common model-neutral database and efficiently performs all necessary data transformations and operations needed to build a model, solve it, and get the results.
+FRAM is an open-source modelling framework developed by [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different power market models and compare them against each other. 
+
+If you previously saw FRAM presentations, you might want to go directly to **FRAM demo on GitHub** - [here is the link]({{ framlinks.demo }}){:target="_blank"}.
+
+FRAM gets data from a common model-neutral database and efficiently performs all necessary data transformations and operations needed to build a model, solve it, and get the results.
 
 ![Architecture overwiew](img/architecture_overview.png)
 
