@@ -36,6 +36,7 @@ extra:
       jules:  https://github.com/NVE/JulES/
   framlinks:
     demo:     https://github.com/NVE/fram-demo
+    video:    https://www.youtube.com/watch?v=YmQZLke86vY
     core:     https://nve.github.io/fram-core/
     data:     https://nve.github.io/fram-data/
     julesAPI: https://nve.github.io/fram-jules/
