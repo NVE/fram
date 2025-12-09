@@ -12,6 +12,8 @@ To connect the model to FRAM you have to create an API package that understands 
 - framcore.solvers.Solver.py
 - framcore.solvers.SolverConfig.py
 
+To be a Solver, the object must inherit from Solver() and have methods *.get_config()* and *._solve()* (method *.solve()* must depend on method *._solve()*).
+
 What is behind these methods may vary widely from model to model, depending on how the optimisation model was set up by its developers. For most optimisation models, the Solver-method will have to create all necessary input files in some format (e.g. csv, h5 or txt) and call upon the optimisation software (e.g. GAMS solve or juliacall). It will also have to read output files in some format (e.g. txt) and put data back into the Model() object.  
 
 Note that in many cases it may be easier to pass-by the original user interface of the energy market model to avoid redundant steps. It may for example be easier and faster to create input files and call upon the optimisation software directly instead of calling upon some functions in the user interface that will afterwards perform the same operations. 
