@@ -20,11 +20,9 @@ Note that in many cases it may be easier to pass-by the original user interface 
 
 ## Do I need to add something to the core model?
 
-If the energy market model you want to connect has data that is not yet supported in the core model, than you have to create new components in the core model (og reuse the existing components if possible).
+If the energy market model you want to connect has data that is not yet supported in the core model, than one of alternatives is to create new components in the core model (og reuse the existing components if possible). If you create new components, than you also have to send new data from the database to the core model, i.e. extend the Populator and add new data validation steps. The core model is constantly under development, and we are constantly adding support for new components. If you have added new components that may be useful for others, [tell us about it](mailto:fram@nve.no) so we can extend the core model with your components. 
 
-If you create new components, than you also have to send new data from the database to the core mode, i.e. extend the Populator and add new data validation steps. 
-
-The core model is constantly under development, and we are constantly adding support for new components. If you have added new components that may be useful for others, [tell us about it](mailto:fram@nve.no) so we can extend the core model with your components. 
+Another alternative is to add model-specific input via SolverConfig. Than this input will only be relevant for this specific model and other energy market models will not be able to make use of it. An example can be model-specific calibration or model-specific factors that no other models use. 
 
 ## How to send data from the core model to the Solver?
 Some models operate with "concrete" data models where input data is based on "real-world" definitions (thermal, demand, transmission etc). These models can use existing high-level components in the core model directly. For example, if your model needs a smart house component, try to define it using existing components demand, battery and solar plant. 
