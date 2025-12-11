@@ -8,7 +8,7 @@ FRAM is an open-source modelling framework developed by [the Norwegian Water Res
 
 If you previously saw FRAM presentations, you might want to go directly to [FRAM demo on GitHub]({{ framlinks.demo }}){:target="_blank"}. 
 
-And here is the [video of the FRAM demo with JuLES model]({{ framlinks.video }}){:target="_blank"}.
+And here is the [video of the FRAM demo with JulES model]({{ framlinks.video }}){:target="_blank"}.
 
 ## Architecture of FRAM
 
