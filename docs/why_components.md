@@ -13,7 +13,7 @@ Flows represent a commodity flow and can have arrow attributes that each describ
 ## How are high-level components represented as low-level components in FRAM? 
 
 ### Example node and two flows
-Let’s take an example of solar production in bidding zone Germany. Solar production as a high-level component can have the following attributes:  
+Let’s take an example of **solar production in bidding zone Germany**. Solar production as a high-level component can have the following attributes:  
 ```text
 {Solar:  
     power_node: DEU,  
