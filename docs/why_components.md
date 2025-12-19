@@ -37,7 +37,9 @@ In this example case, the low-level representation of the DEU solar production w
     min_capacity: None,  
     startupcost: None,  
     volume: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ],  
-    arrow_volumes*: {power_arrow: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ] },   
+    arrow_volumes*: {
+        power_arrow: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ]
+        },
 } 
 ```
 _* arrow_volumes the same as volume in this example because the flow has just one arrow_
