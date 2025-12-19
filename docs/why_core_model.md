@@ -14,11 +14,13 @@ But why won’t we just use data tables directly to manipulate the data and send
 First of all, working with attributes is much smarter when they are defined as fields in a Python object rather than columns in a table. For example, you can have a table with thermal power plants and many columns describing different parameters (attributes) of these power plants:  
 
 _Table with attributes as columns_  
+
 {{ read_csv('docs/tables/core_model_attribute_table.csv') }}
 
 Or you can have the same data attributes in a Python object:  
 
 _Attributes as “fields” in a core model component (Python object)_  
+```text
 {plant 1:  
     efficiency: 0.5,  
     startup_cost: 100,  
@@ -30,6 +32,7 @@ _Attributes as “fields” in a core model component (Python object)_
     startup_cost: 150,  
     …  
     }  
+```
 
 When you want to stage data for a given energy market model or to run differently configured models or to create different scenarios, it is much easier to do so using Python objects than using tables:  
 - _Manipulation with tables_  

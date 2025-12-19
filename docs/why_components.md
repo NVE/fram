@@ -14,6 +14,7 @@ Flows represent a commodity flow and can have arrow attributes that each describ
 
 ### Example node and two flows
 Let’s take an example of solar production in bidding zone Germany. Solar production as a high-level component can have the following attributes:  
+```text
 {Solar:  
     power_node: DEU,  
     max_capacity: 1 GW,  
@@ -22,27 +23,32 @@ Let’s take an example of solar production in bidding zone Germany. Solar produ
     production: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ],  
     …  
     }  
+```
 
 FRAM can decompose the solar production of the power commodity feeding into the DEU bidding zone into the low-level components flow and node. The below figure illustrates this - a power node for Germany, solar power production as a flow into the node and demand as a flow out of the node.
 ![Illustration one node](img/low_level_one_node.svg)
 
 In this example case, the low-level representation of the DEU solar production would be as follows:  
+```text
 {Flow:  
     main_node: DEU,  
     max_capacity: 1 GW,  
     min_capacity: None,  
     startupcost: None,  
     volume: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ],  
-    arrow_volumes: {power_arrow: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ] }, _(same as volume because in this example the flow has just one arrow)_  
+    arrow_volumes: {power_arrow: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ] }, (same as volume because in this example the flow has just one arrow)
     }  
+```
 
 The node would be represented like:  
+```text
 {Node:  
     commodity: Power,  
-    is_exogenous: False, _(signals whether the energy market model should simulate the node endogenously or use a pre-set price)_  
-    price: [3 EUR/MWh, 2.4 EUR/MWh, 1 EUR/MWh, …], _(price of commodity calculated by the energy market model and sent back to the core model)_  
-    storage: None, _(because in this example we have no storage)_  
+    is_exogenous: False, (signals whether the energy market model should simulate the node endogenously or use a pre-set price)
+    price: [3 EUR/MWh, 2.4 EUR/MWh, 1 EUR/MWh, …], (price of commodity calculated by the energy market model and sent back to the core model)  
+    storage: None, (because in this example we have no storage)  
     }  
+```
 
 Changes made inside the attributes in low-level components will also appear in high-level components. 
 
@@ -55,22 +61,26 @@ The figure below illustrates a low-level representation of a simple power system
 ![Illustration nodes two commodities](img/low_level_two_commodities.svg)
 
 The HPP node with storage above could have a low-level representation like:  
+```text
 {Node:  
     commodity: Hydropower,  
     is_exogenous: False,  
     price: [0.5, 1, 2, ...],  
     storage: Storage(),  
-    },  
+    }, 
+``` 
 
 where the Storage() component would have attributes like:  
+```text
 {Storage:  
     capacity: 1,000 MW,  
-    volume: [10, 25, 2, ...], _(storage filling, actual or result)_  
+    volume: [10, 25, 2, ...], (storage filling, actual or result)
     loss: 0.01,   
-    reservoir_curve: [0.10, 0.15, 0.14 etc.], _(water level elevation to water volume)_  
+    reservoir_curve: [0.10, 0.15, 0.14 etc.], (water level elevation to water volume)
     initial_storage_percentage: 0.72,  
     ...  
     }  
+```
 
 ## Why convert between high-level and low-level?
 The main advantages of converting between high-level and low-level components are possibility to write more generic code for data calculations and compatibility with energy system models that already operate with low-level components:
