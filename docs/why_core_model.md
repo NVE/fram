@@ -1,7 +1,7 @@
 # Why do we need a core model? 
-In FRAM, the energy market models access data through a core model - a Python object that holds the information about all [components](explanations/why_components.md) in the data. Different energy models require different levels of input data detail and data formats. The core model is therefore an [extra layer of data processing between the database and model input / output in the FRAM framework](explanations/how_fram_works.md). 
+In FRAM, the energy market models access data through a core model - a Python object that holds the information about all [components](explanation/why_components.md) in the data. Different energy models require different levels of input data detail and data formats. The core model is therefore an extra [layer of data processing] between the database and model input / output in the FRAM framework(explanation/how_fram_works.md). 
 
-You might wonder, why do we need a core model at all? Here we will try to answer this question by describing two main advantages: smarter data manipulation and possibility to transform data between [high- and low-level components](explanations/why_components.md).
+You might wonder, why do we need a core model at all? Here we will try to answer this question by describing two main advantages: smarter data manipulation and possibility to transform data between [high- and low-level components](explanation/why_components.md).
 
 ## Why is data manipulation using a core model smarter? 
 The FRAM core model allows to manipulate and aggregate data for specific energy market models in a smart way. For example, one model might require aggregated hydropower, while another model requires detailed data about each hydropower plant. 
@@ -11,8 +11,8 @@ The FRAM core model allows to manipulate and aggregate data for specific energy 
 
 But why won’t we just use data tables directly to manipulate the data and send it directly to the energy market models? 
 
-First of all, working with attributes is much smarter when they are defined as fields in a Python object rather than columns in a table. For example, you can have a table with thermal power plants and many columns describing different parameters (attributes) of these power plants: 
-_Table with attributes as columns_
+First of all, working with attributes is much smarter when they are defined as fields in a Python object rather than columns in a table. For example, you can have a table with thermal power plants and many columns describing different parameters (attributes) of these power plants:  
+_Table with attributes as columns_  
 {{ read_csv('docs/tables/core_model_attribute_table.csv') }}
 
 Or you can have the same data attributes in a Python object:  
@@ -37,5 +37,5 @@ When you want to stage data for a given energy market model or to run differentl
     The same can be done much more efficiently and elegantly using Python objects. Each object would know how to interpret different attributes, because each attribute is already described as a Python class. Each component would know how to populate itself with data, how to aggregate it, and so on. You can also easily create different variants of the same component by modifying the Python object, for example to create different scenarios. There is no need to add more information to the table and make it constantly bigger. This is why we implemented the core model in FRAM – we wanted to work with data in a smarter way, representing data as attributes in Python objects.
 
 ## Transformation between high- and low-level components
-The second big advantage of using Python objects is the possibility to transform high-level components (e.g. PowerPlant, Demand, Hydropower) into low-level components, i.e. more abstract components: flow and node. [Read here](explanations/why_components.md) to learn why this is so useful.
+The second big advantage of using Python objects is the possibility to transform high-level components (e.g. PowerPlant, Demand, Hydropower) into low-level components, i.e. more abstract components: flow and node. [Read here](explanation/why_components.md) to learn why this is so useful.
 

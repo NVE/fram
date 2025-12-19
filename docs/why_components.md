@@ -12,6 +12,7 @@ Flows represent a commodity flow and can have arrow attributes that each describ
 
 ## How are high-level components represented as low-level components in FRAM? 
 
+### Example node and two flows
 Let’s take an example of solar production in bidding zone Germany. Solar production as a high-level component can have the following attributes:  
 {Solar:  
     power_node: DEU,  
@@ -45,7 +46,7 @@ The node would be represented like:
 
 Changes made inside the attributes in low-level components will also appear in high-level components. 
 
-## Example flow and node with storage
+### Example flow and node with storage
 
 Here is another example of decomposition of high-level components with storage - **a hydropower plant with a reservoir**. In FRAM, there are Python-objects called Storage() that have their own attributes and are connected to a node of the commodity. 
 
