@@ -25,8 +25,8 @@ nav:
     - installation_and_demo.md
   - Explanation:
     - how_fram_works.md
-    - why_components.md
     - why_core_model.md
+    - why_components.md
     - why_we_developed.md
     - why_is_it_called.md
   - How-to Guides:
