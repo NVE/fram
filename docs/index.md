@@ -4,11 +4,11 @@
 The version of FRAM that is currently published is an Minimum Viable Product, i.e. it has minimum functionality to run a simple power market model. We are working on adding more features.  
 </div>
 
-FRAM is an open-source modelling framework developed by [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different energy market models and compare them with each other. 
+FRAM is an open-source modelling framework developed by [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different energy market models and compare them to each other. 
 
-If you previously saw FRAM presentations, you might want to go directly to [FRAM demo on GitHub]({{ framlinks.demo }}){:target="_blank"}. 
+If you previously saw a FRAM presentations, you might want to go directly to [FRAM demo on GitHub]({{ framlinks.demo }}){:target="_blank"}. 
 
-And here is the [video of the FRAM demo with JulES model]({{ framlinks.video }}){:target="_blank"}.
+Here is a [video demonstration of the FRAM demo with the JulES model]({{ framlinks.video }}){:target="_blank"}.
 
 ## Architecture of FRAM
 
@@ -20,9 +20,9 @@ FRAM simplifies working with models for analysts and reduces the time needed to 
 
 Contact: [fram@nve.no](mailto:fram@nve.no)
 
-## Features
+## Key features
 
-- **Universal and model independent design** - you can connect any power market model to FRAM. In this repository, you can find API and tutorials for running an open-source power market model [JulES]({{ juleslinks.jules }}){:target="_blank"}.
+- **Universal and model independent design** - you can connect any power market model to FRAM. The current release includes an API and tutorials for running the open-source power market model [JulES]({{ juleslinks.jules }}){:target="_blank"}.
 - **Innovative data processing system** - FRAM can efficiently perform complex operations like aggregation, disaggregation, and can handle different units and time dimensions.
 - **Fast and efficient** - data processing in FRAM is designed to be fast and have efficient memory use.
 - **Modular and flexible** - you can extend the core model or replace components with your own.
@@ -33,10 +33,11 @@ FRAM consists of several Python packages:
 
 ![Architecture of FRAM](img/package_overview.svg)
 
-We suggest installing or downloading [FRAM demo]({{ framlinks.demo }}){:target="_blank"} to explore FRAM. It will install all other packages automatically for you.
+We suggest installing or downloading [FRAM demo on GitHub]({{ framlinks.demo }}){:target="_blank"} to explore FRAM. It will install all other packages automatically for you.
 
 You will find documentation of each package following these links:
 
 - [FRAM core]({{ framlinks.core }}){:target="_blank"}
 - [FRAM data]({{ framlinks.data }}){:target="_blank"}
 - [FRAM JulES]({{ framlinks.julesAPI }}){:target="_blank"}
+- [FRAM demo docs]({{ framlinks.demodocs }}){:target="_blank"}

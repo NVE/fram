@@ -11,6 +11,7 @@ theme:
 
 markdown_extensions:
 - attr_list
+- tables
 
 plugins:
   - mike
@@ -25,6 +26,8 @@ nav:
     - how_fram_works.md
     - why_we_developed.md
     - why_is_it_called.md
+    - components.md
+    - why_core_model.md
   - How-to Guides:
     - how_to_add_model.md
     - how_to_contact.md
@@ -40,7 +43,8 @@ extra:
     core:     https://nve.github.io/fram-core/
     data:     https://nve.github.io/fram-data/
     julesAPI: https://nve.github.io/fram-jules/
-    dataset:  https://doi.org/10.5281/zenodo.17294466  
+    dataset:  https://doi.org/10.5281/zenodo.17294466
+    demodocs: https://nve.github.io/fram-demo/latest/
 
 
 extra_css:
