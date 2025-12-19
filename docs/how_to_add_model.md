@@ -9,7 +9,7 @@ Use JulES API package (fram-jules) from our [simple demo]({{ framlinks.demo }}){
 
 An energy market model is normally a third-party software that contains an algorithm for solving a market optimisation problem, as well as the model input data and output data in some format. The algorithm for solving the optimisation problem may be implemented in different languages, e.g. GAMS, Julia, Matlab etc. Many models have their own interfaces for handling the input and the output data. 
 
-To connect the model to FRAM you have to create an API package that understands the core model, is able to get data from it, send it to the third party software and start the optimisation. It will also have to read the results of the optimisation and send them back to the core model. The two most important methods you have to implement are **get_config** and **solve** methods. Interfaces for them can be found in [FRAM core]({{framlinks.core }}){:target="_blank"}:
+To connect the model to FRAM you have to create an API package that understands the core model, is able to get data from it, send it to the third party software and start the optimisation. It will also have to read the results of the optimisation and send them back to the core model. The two most important methods you have to implement are **get_config** and **solve** methods. Interfaces for them can be found in [FRAM core]({{ framlinks.core }}){:target="_blank"}:
 
 - framcore.solvers.Solver.py
 - framcore.solvers.SolverConfig.py
@@ -27,20 +27,11 @@ If the energy market model you want to connect has data that is not yet supporte
 Another alternative is to add model-specific input via SolverConfig. Than this input will only be relevant for this specific model and other energy market models will not be able to make use of it. An example can be model-specific calibration or model-specific factors that no other models use. 
 
 ## How to send data from the core model to the Solver?
-Some models operate with "concrete" data models where input data is based on "real-world" definitions (thermal, demand, transmission etc). These models can use existing high-level components in the core model directly. For example, if your model needs a smart house component, try to define it using existing components demand, battery and solar plant. 
+Some models operate with "concrete" data models where input data is based on "real-world" definitions (thermal, demand, transmission, etc). These models can use existing high-level components in the core model directly. For example, if your model needs a smart house component, try to define it using existing components demand, battery and solar plant. 
 
 You can also define your own components - in this case you have to update the Populator so that it knows about the new components. 
 
-Other models have more "abstract" data models, like nodes and flows. FRAM core model supports these models as well because all high-level components can be decomponsed into low-level, more abstract components **flow** and **node**. These are the most basic components in the core model.
+Other models have more "abstract" data models, like nodes and flows. FRAM core model supports these models as well because [all high-level components can be decomponsed into low-level](explanations/why_components.md), more abstract components **flow** and **node**. These are the most basic components in the core model.
 
 Models with "concrete" data models can also use low-level components, though it may be not intuitive in the start. This approach can give some significant advantages where you will get much more "clean code" and avoid a lot of duplicate code. See our examples with JulES model to understand better how to flow and node components are used.
-
-
-
-
- 
- 
- 
-
-
 

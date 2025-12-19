@@ -35,9 +35,9 @@ FRAM consists of several Python packages:
 
 We suggest installing or downloading [FRAM demo on GitHub]({{ framlinks.demo }}){:target="_blank"} to explore FRAM. It will install all other packages automatically for you.
 
-You will find documentation of each package following these links:
+You will find **documentation for each package** following these links:
 
 - [FRAM core]({{ framlinks.core }}){:target="_blank"}
 - [FRAM data]({{ framlinks.data }}){:target="_blank"}
 - [FRAM JulES]({{ framlinks.julesAPI }}){:target="_blank"}
-- [FRAM demo docs]({{ framlinks.demodocs }}){:target="_blank"}
+- [FRAM demo]({{ framlinks.demodocs }}){:target="_blank"}

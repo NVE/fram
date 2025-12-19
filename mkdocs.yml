@@ -17,6 +17,7 @@ plugins:
   - mike
   - search
   - macros
+  - table-reader
 
 nav:
   - index.md
@@ -24,6 +25,8 @@ nav:
     - installation_and_demo.md
   - Explanation:
     - how_fram_works.md
+    - why_components.md
+    - why_core_model.md
     - why_we_developed.md
     - why_is_it_called.md
     - components.md

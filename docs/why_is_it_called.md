@@ -9,7 +9,3 @@ FRAM is derived from the English word "framework". But it is also the name of th
 
 ![FRAM ship](img/fram_ship_wikimedia_commons.jpg)
 
-
-
-
-

@@ -10,3 +10,4 @@ FRAM has been developed by a team of professional Python developers in collabora
 
 ![NVE_powerplant](img/nve.jpg)
 _One of NVE's key areas of responsibility is understanding the power market. Here showing Såheim hydropower plant in Telemark, Norway._
+
