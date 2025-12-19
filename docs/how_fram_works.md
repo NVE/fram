@@ -2,7 +2,7 @@
 
 *We are still working on this description, more information will come soon.*
 
-The main component of FRAM is the [**core model**](../explanation/why_core_model.md) that creates a Python object **Model()** that holds the data from the database. The data in the Model object is transformed depending on what is required by the given power market model. Data is imported from the database using a **Populator** class in the [FRAM data package]({{ framlinks.data }}){:target="_blank"}.  
+The main component of FRAM is the [**core model**](../why_core_model.md) that creates a Python object **Model()** that holds the data from the database. The data in the Model object is transformed depending on what is required by the given power market model. Data is imported from the database using a **Populator** class in the [FRAM data package]({{ framlinks.data }}){:target="_blank"}.  
 
 _Architecture of FRAM_
 
