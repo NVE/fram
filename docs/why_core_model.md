@@ -34,7 +34,8 @@ _Attributes as “fields” in a core model component (Python object)_
     }  
 ```
 
-When you want to stage data for a given energy market model or to run differently configured models or to create different scenarios, it is much easier to do so using Python objects than using tables:  
+When you want to stage data for a given energy market model or to run differently configured models or to create different scenarios, it is much easier to do so using Python objects than using tables:
+  
 - _Manipulation with tables_  
 With tables you will need to add new columns, write code that interprets the columns correctly and performs operations on the table in the way you want. For creating scenarios, you will need to modify the data in table rows or columns and handle different versions of the table. Also, if you want to run the same scenario in different energy market models, you may need to add model-specific columns to specify that attributes must be interpreted differently for different models. Handling tables, columns and rows therefore becomes large and complex, and it is difficult to keep the data model independent.
 
