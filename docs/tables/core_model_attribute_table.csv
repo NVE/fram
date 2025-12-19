@@ -1,3 +1,3 @@
-﻿;efficiency;startup_cost;min_capacity;…;
-plant 1;0.5;100;40;;
-plant 2;0.4;150;50;;
+﻿,efficiency,startup_cost,min_capacity,…,
+plant 1,0.5,100;40,,
+plant 2,0.4,150,50,,

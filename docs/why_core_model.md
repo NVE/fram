@@ -13,6 +13,7 @@ But why won’t we just use data tables directly to manipulate the data and send
 
 First of all, working with attributes is much smarter when they are defined as fields in a Python object rather than columns in a table. For example, you can have a table with thermal power plants and many columns describing different parameters (attributes) of these power plants:  
 _Table with attributes as columns_  
+
 {{ read_csv('docs/tables/core_model_attribute_table.csv') }}
 
 Or you can have the same data attributes in a Python object:  
