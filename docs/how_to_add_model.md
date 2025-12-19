@@ -31,7 +31,7 @@ Some models operate with "concrete" data models where input data is based on "re
 
 You can also define your own components - in this case you have to update the Populator so that it knows about the new components. 
 
-Other models have more "abstract" data models, like nodes and flows. FRAM core model supports these models as well because [all high-level components can be decomponsed into low-level](explanations/why_components.md), more abstract components **flow** and **node**. These are the most basic components in the core model.
+Other models have more "abstract" data models, like nodes and flows. FRAM core model supports these models as well because [all high-level components can be decomponsed into low-level](why_components.md), more abstract components **flow** and **node**. These are the most basic components in the core model.
 
 Models with "concrete" data models can also use low-level components, though it may be not intuitive in the start. This approach can give some significant advantages where you will get much more "clean code" and avoid a lot of duplicate code. See our examples with JulES model to understand better how to flow and node components are used.
 
