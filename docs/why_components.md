@@ -28,13 +28,13 @@ FRAM can decompose the solar production of the power commodity feeding into the 
 
 In this example case, the low-level representation of the DEU solar production would be as follows:  
 {Flow:  
-	main_node: DEU,  
+    main_node: DEU,  
     max_capacity: 1 GW,  
     min_capacity: None,  
     startupcost: None,  
     volume: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ],  
     arrow_volumes: {power_arrow: [0.8 GWh/h, 0.9 GWh/h, 0.9 GWh/h, ... ] }, _(same as volume because in this example the flow has just one arrow)_  
-}  
+    }  
 
 The node would be represented like:  
 {Node:  
@@ -42,7 +42,7 @@ The node would be represented like:
     is_exogenous: False, _(signals whether the energy market model should simulate the node endogenously or use a pre-set price)_  
     price: [3 EUR/MWh, 2.4 EUR/MWh, 1 EUR/MWh, …], _(price of commodity calculated by the energy market model and sent back to the core model)_  
     storage: None, _(because in this example we have no storage)_  
-}  
+    }  
 
 Changes made inside the attributes in low-level components will also appear in high-level components. 
 
@@ -62,7 +62,7 @@ The HPP node with storage above could have a low-level representation like:
     storage: Storage(),  
     },  
 
-where the storage component would have attributes like:  
+where the Storage() component would have attributes like:  
 {Storage:  
     capacity: 1,000 MW,  
     volume: [10, 25, 2, ...], _(storage filling, actual or result)_  

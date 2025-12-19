@@ -1,5 +1,5 @@
 # Why do we need a core model? 
-In FRAM, the energy market models access data through a core model - a Python object that holds the information about all [components](why_components.md) in the data. Different energy models require different levels of input data detail and data formats. The core model is therefore an extra [layer of data processing] between the database and model input / output in the FRAM framework(explanation/how_fram_works.md). 
+In FRAM, the energy market models access data through a core model - a Python object that holds the information about all components in the data. Different energy models require different levels of input data detail and data formats. The core model is therefore an extra [layer of data processing](how_fram_works.md) between the database and model input / output in the FRAM framework.
 
 You might wonder, why do we need a core model at all? Here we will try to answer this question by describing two main advantages: smarter data manipulation and possibility to transform data between [high- and low-level components](why_components.md).
 
@@ -12,14 +12,15 @@ The FRAM core model allows to manipulate and aggregate data for specific energy 
 But why won’t we just use data tables directly to manipulate the data and send it directly to the energy market models? 
 
 First of all, working with attributes is much smarter when they are defined as fields in a Python object rather than columns in a table. For example, you can have a table with thermal power plants and many columns describing different parameters (attributes) of these power plants:  
-_Table with attributes as columns_  
 
+_Table with attributes as columns_  
 {{ read_csv('docs/tables/core_model_attribute_table.csv') }}
 
 Or you can have the same data attributes in a Python object:  
+
 _Attributes as “fields” in a core model component (Python object)_  
 {plant 1:  
-	efficiency: 0.5,  
+    efficiency: 0.5,  
     startup_cost: 100,  
     min_capacity: 40,  
     …  
