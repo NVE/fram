@@ -1,7 +1,7 @@
 # What is FRAM?
 
 <div class="red-box">
-The version of FRAM that is currently published is an Minimum Viable Product, meaning that it has minimum functionality to run a simple power market model. We are constantly working on adding more features.  
+The version of FRAM that is currently published is a Minimum Viable Product meaning that it has minimum functionality to run a simple power market model. We are working on adding more features.  
 </div>
 
 FRAM is an open-source modelling framework developed by [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different energy market models and compare them to each other. 
