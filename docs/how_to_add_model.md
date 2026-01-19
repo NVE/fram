@@ -3,7 +3,7 @@
 ## What is required to add a new energy market model to FRAM?
 To connect a new energy market model to FRAM you need to create an API for the model - a Python package that will connect the core model to the optimisation algorithm in the energy market model.
 
-![Connecting new model to FRAM](../assets/model_api_example.svg "Connecting new model to FRAM")
+![Connecting new model to FRAM](assets/model_api_example.svg "Connecting new model to FRAM")
 
 Use JulES API package (fram-jules) from our [simple demo]({{ framlinks.demo }}){:target="_blank"} as an example. 
 
