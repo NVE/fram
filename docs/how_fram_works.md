@@ -1,10 +1,12 @@
 # How FRAM works
 
-*We are still working on this description, more information will come soon.*
+The main component of FRAM is the [**core model**](why_core_model.md) in  the [FRAM core]({{ framlinks.core }})  package, which creates a Python object **Model()** that holds the data from the database. The data in the Model object is transformed depending on what is required by the given power market model. 
 
-The main component of FRAM is the [**core model**](why_core_model.md) that creates a Python object **Model()** that holds the data from the database. The data in the Model object is transformed depending on what is required by the given power market model. Data is imported from the database using a **Populator** class in the [FRAM data package]({{ framlinks.data }}){:target="_blank"}.  
+Data is imported from the database using a **Populator** class in the [FRAM data]({{ framlinks.data }}){:target="_blank"} package.  
 
-_Architecture of FRAM_
+Data is sent to a power market model through the FRAM **solver interface** defined in [FRAM core]({{ framlinks.core }}){:target="_blank"} package. The current release has an implementation of a solver in [FRAM JulES]({{ framlinks.julesAPI }}){:target="_blank"}.
+
+### Architecture of FRAM
 
 ![Architecture of FRAM](img/architecture_detailed.svg)
 
@@ -14,9 +16,11 @@ Different kinds of **nodes** can be defined - emission nodes, power nodes, fuel 
 
 Data in the core model can be easily **manipulated** - aggregated, disaggregated and converted, with respect to different units and time resolution, etc. This is how data can be staged for a given energy marked model run.
 
+Through the solver interface, data is sent to the power market model, and **results** are sent back from the solved model to core model. Core model has fields for 'feeding in' results from different models. For example, a Node() object has a field where you can set the price from a solved model. Model results can then also be manipulated, through aggregation and disaggregation, etc., which simplifies comparison between models.
+
 For more details about the core model, see [FRAM core]({{ framlinks.core }}){:target="_blank"}.
 
 For more details about the database and data package, see [FRAM data]({{ framlinks.data }}){:target="_blank"}.
 
-For more information about the JulES API, see [FRAM JuLES]({{ juleslinks.jules }}){:target="_blank"}.
+For more information about the JulES API, see [FRAM JulES]({{ framlinks.julesAPI }}){:target="_blank"}.
 

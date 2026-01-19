@@ -1,5 +1,5 @@
 # Why it is called FRAM
-FRAM is derived from the English word "framework". But it is also the name of the Norwegian ship that due to its innovative design managed to sail farthest towards the North Pole and the South Pole than any other ship did before.
+FRAM is derived from the English word "framework". It is also the name of the Norwegian ship that due to its innovative design managed to sail farther towards the North Pole and the South Pole than any other ship did before.
 
 <div style="text-align: right; font-style: italic;">
     "What, however, may be said to be new is the fact that we not only realized that the ship ought to have such a form, but that we gave it that form, as well as the necessary strength for resisting great ice-pressure, and that this was the guiding idea in the whole work of construction.”
