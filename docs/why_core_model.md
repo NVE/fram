@@ -35,6 +35,7 @@ __Manipulation with tables__
 Tables are a familiar way to store data. In the table below, each row represents a component (for example, a thermal power plant) and each column represents an attribute such as efficiency or startup cost. 
 
 _Table with attributes as columns_
+
 {{ read_csv('docs/tables/core_model_attribute_table.csv') }}
  
 Tables work well as long as the data is static. But when you start building multiple model configurations, adding new assumptions, or creating many scenarios, the table must constantly be expanded. New concepts often require new columns, and each scenario may require its own modified version of the table. Over time the table, and the code that manipulates it, becomes wider, harder to read, and tightly linked to the specific models that use it.
@@ -61,9 +62,9 @@ _Attributes as “fields” in a core model component (Python object)_
 At first glance the two approaches look similar. The important difference is that a table only stores values, while a Python object stores both values *and* the logic for how those values should be interpreted and used.
 
 When storing data in Python objects, these objects also need to be expanded when new or modified data is added. The difference is that a Python object can describe not only what a component is, but also how it should behave. Each object can know how to interpret its own different attributes. The object can 
-- validate its own data, 
-- compute derived values, for example aggregation of the data, and 
-- apply scenario adjustments,  
+* validate its own data,  
+* compute derived values, for example aggregation of the data, and  
+* apply scenario adjustments,  
 
 without needing extra columns or creating duplicates. When you introduce a new modelling concept, you can extend the object’s logic, rather than adding more fields. 
 
