@@ -10,7 +10,7 @@ From a development perspective, the scalability and possibility to add more ener
 
 Different energy market models have different internal data models with their own level of detail, which may support or not support some modelling features. It would be very difficult to build generic applications (for example, workflow running the analysis and dashboard showing the results) on top of these different data models without this extra data abstraction layer that the core model represents. 
 
-Without the core model we would have to build an application that understands all possible data models and in addition all possible "hacks" that the analysts sometimes use when the model is missing support for some feature. This would not be scalable or reasonable or cost-efficient. Instead, the core model creates a stable and consistent API that different applications can use without being dependent on the various internal data models. 
+Without the core model we would have to build an application that understands all possible data models and in addition all possible "hacks" that the analysts sometimes use when the model is missing support for some feature. This would not be scalable or reasonable or cost-efficient. Instead, the **core model creates a stable and consistent API that different applications can use without being dependent on the various internal data models**. 
 
 ## Smart data manipulation 
 
