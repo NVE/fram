@@ -1,4 +1,5 @@
 site_name: FRAM
+site_url: https://nve.github.io/fram/
 
 theme:
   features:
@@ -23,15 +24,17 @@ nav:
   - index.md
   - Getting Started: 
     - installation_and_demo.md
-  - Explanation:
+  - Understanding FRAM:
     - how_fram_works.md
     - why_core_model.md
     - why_components.md
     - what_special_jules.md
+  - Background:
     - why_we_developed.md
     - why_is_it_called.md
   - How-to Guides:
     - how_to_add_model.md
+  - Contact:
     - how_to_contact.md
 
 extra:
