@@ -1,3 +1,8 @@
+---
+title: "What Is Special About JulES?"
+description: "Discover how the JulES power‑market model, integrated with FRAM, enables detailed hydropower representation and high‑resolution Nordic system modelling."
+---
+
 # What is special about JulES?
 [JulES]({{ juleslinks.jules }}){:target="_blank"} is a fundamental energy market simulation model for operational planning, developed by NVE and applied in the FRAM demo. It uses [TuLiPa](https://github.com/NVE/TuLiPa) as building blocks.
 

@@ -1,5 +1,6 @@
-site_name: FRAM
+site_name: "FRAM - NVE's Open-Source Power Market Modelling Framework"
 site_url: https://nve.github.io/fram/
+site_description: "FRAM is NVE's open-source framework for building, running, and comparing power-market models."
 
 theme:
   features:

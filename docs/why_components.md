@@ -1,3 +1,8 @@
+---
+title: "High‑Level and Low‑Level Components in FRAM"
+description: "Explanation of FRAM’s high‑level and low‑level components."
+---
+
 # Why do we have high-level and low-level components in the core model?
 The components describe the main elements of the modelled energy systems in FRAM. We have high-level and low-level components in the core model, which are all Python objects. 
 

@@ -1,6 +1,11 @@
+---
+title: "How FRAM works"
+description: "Learn how FRAM structures and transforms energy‑system data using the core model, components, nodes, and solver interface to run power‑market models like JulES."
+---
+
 # How FRAM works
 
-The main component of FRAM is the [**core model**](why_core_model.md) in  the [FRAM core]({{ framlinks.core }})  package, which creates a Python object **Model()** that holds the data from the database. The data in the Model object is transformed depending on what is required by the given power market model. 
+The main component of FRAM is the [**core model**](why_core_model.md) in  the [FRAM core]({{ framlinks.core }}) package, which creates a Python object **Model()** that holds the data from the database. The data in the Model object is transformed depending on what is required by the given power market model. 
 
 Data is imported from the database using a **Populator** class in the [FRAM data]({{ framlinks.data }}){:target="_blank"} package.  
 
