@@ -1,5 +1,5 @@
 ---
-title: "FRAM – NVE's Open‑Source Power Market Modelling Framework"
+title: "What is FRAM?"
 description: "FRAM is NVE's open‑source framework for building, running, and comparing energy and power‑market models using a shared, model‑neutral data structure."
 keywords:
   - NVE

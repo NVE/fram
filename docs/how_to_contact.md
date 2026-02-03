@@ -1,5 +1,5 @@
 ---
-title: "Contact the FRAM Team"
+title: "How to Contact the FRAM Team"
 description: "Get support for FRAM. Contact the NVE development team for questions, feedback, collaboration, or contributions to the FRAM framework."
 ---
 
