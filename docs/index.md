@@ -21,6 +21,8 @@ If you previously saw a FRAM presentation or want to get started, you might want
 
 Here is a [video demonstration of the FRAM demo with the JulES model]({{ framlinks.video }}){:target="_blank"}.
 
+Read more about FRAM below or see [how to contact us](how_to_contact.md) to get in touch for help, feedback, or contributions.
+
 <div class="red-box">
 The version of FRAM that is currently published is a Minimum Viable Product, meaning that it has minimum functionality to run a simple power market model. We are working on adding more features.  
 </div>
