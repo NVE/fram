@@ -15,13 +15,11 @@ keywords:
 
 # What is FRAM?
 
-FRAM is an open-source modelling framework developed by the [Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different energy market models and compare them to each other. 
+FRAM is an open-source modelling framework developed by [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"} that allows you to build and run different energy market models and compare them to each other. 
 
-If you previously saw a FRAM presentation or want to get started, you might want to read about [installation](installation_and_demo.md) or go directly to [FRAM demo on GitHub]({{ framlinks.demo }}){:target="_blank"}. 
+If you previously saw a FRAM presentation, you might want to go directly to [FRAM demo on GitHub]({{ framlinks.demo }}){:target="_blank"}. 
 
 Here is a [video demonstration of the FRAM demo with the JulES model]({{ framlinks.video }}){:target="_blank"}.
-
-Read more about FRAM below or see [how to contact us](how_to_contact.md) to get in touch for help, feedback, or contributions.
 
 <div class="red-box">
 The version of FRAM that is currently published is a Minimum Viable Product, meaning that it has minimum functionality to run a simple power market model. We are working on adding more features.  
@@ -34,6 +32,8 @@ FRAM gets data from a common model-neutral database and efficiently performs all
 ![Architecture overwiew](img/architecture_overview.png)
 
 FRAM simplifies working with models for analysts and reduces the time needed to build and run power market models and get results. It ensures consistency between models, as they are created from the same dataset. Each model is only integrated into the model framework once, and then the analysts can run models and scenarios, sequentially or in parallel, adjusting the workflow depending on the specific analysis.
+
+Contact: [fram@nve.no](mailto:fram@nve.no)
 
 ## Key features
 
