@@ -1,3 +1,8 @@
+---
+title: "Why We Need a Core Model"
+description: "Learn why FRAM uses a shared core model to unify data, ensure consistency, and simplify the development and comparison of power‑market models."
+---
+
 # Why do we need a core model? 
 The most important part of FRAM is the [**core model**]({{ framlinks.core }}){:target="_blank"}. This is a Python object that holds the information about all [components](why_components.md) in the modelled energy system. The energy market models access input data through the core model. Different energy models have different internal data models with their own level of detail, which support different modelling features and require different levels of input data detail and data formats. The core model is therefore an [extra layer of data processing](how_fram_works.md) between the database and the model input / output in FRAM. A more detailed technical description of the core model can be found [here]({{ framlinks.core }}){:target="_blank"}. 
 

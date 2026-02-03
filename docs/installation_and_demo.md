@@ -1,3 +1,8 @@
+---
+title: "Installation and demo"
+description: "Learn how to use FRAM by running the FRAM demo, a basic modelling case with the NVE developed power market model JulES."
+---
+
 # Installation and demo
 
 ## Get started with the FRAM demo

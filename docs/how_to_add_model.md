@@ -1,3 +1,8 @@
+---
+title: "How to Connect a New Energy Market Model"
+description: "A practical guide to integrating your own power‑market model with FRAM, including required interfaces, data structures, and workflow integration steps."
+---
+
 # How to connect a new energy market model?
 
 ## What is required to add a new energy market model to FRAM?

@@ -1,3 +1,8 @@
+---
+title: "Why We Developed FRAM"
+description: "Learn why NVE developed FRAM to modernize energy‑market modelling, improve consistency, and support scalable, transparent analysis workflows."
+---
+
 # Why we developed FRAM
 
 At [the Norwegian Water Resources and Energy Directorate (NVE)](https://www.nve.no/english/){:target="_blank"}, modelling is widely used to understand short-term and long-term developments in the power market. The possibility to run many models, many scenarios and compare them with each other is crucial for understanding the increasing complexity of the changing energy system. We saw a clear need to create a system that enables flexible and efficient use of different energy and power market models as different models are good at solving different problems. Therefore, we developed this modelling framework FRAM to support our analysts so that we could continue delivering quick and high-quality analyses in the future.  
